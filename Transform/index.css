@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    margin: 0 auto;
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.main .box{
+    font-size: 1.6rem;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.main .box1{
+    background-color: brown;
+    transition: 1s;
+}
+
+.main .box1 span{
+    display: none;
+}
+
+.main .box1:hover{
+    transform: scale(1.5);
+}
+
+.main .box1:hover h6{
+    display: none;
+}
+
+.main .box1:hover span{
+    display: block;
+}
+
+.main .box2{
+    background-color: green;
+    transition: 1s;
+}
+.main .box2 span{
+    display: none;
+}
+
+.main .box2:hover{
+    transform: translateX(50%) translateY(-100%);
+}
+
+.main .box2:hover h6{
+    display: none;
+}
+
+.main .box2:hover span{
+    display: block;
+}
+
+.main .box3{
+    background-color: blueviolet;
+    transition: 1s;
+}
+
+.main .box3 span{
+    display: none;
+}
+
+.main .box3:hover{
+    transform: rotateY(360deg);
+}
+
+.main .box3:hover h6{
+    display: none;
+}
+
+.main .box3:hover span{
+    display: block;
+}
+
+.main .box4{
+    background-color: orange;
+    transition: 1s;
+}
+
+.main .box4 span{
+    display: none;
+}
+
+.main .box4:hover{
+    transform: skewX(20deg);
+}
+
+.main .box4:hover h6{
+    display: none;
+}
+
+.main .box4:hover span{
+    display: block;
+}
