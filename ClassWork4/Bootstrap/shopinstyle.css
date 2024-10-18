@@ -6,7 +6,7 @@
 }
 
 .container{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -17,11 +17,15 @@
     align-items: center;
 }
 
-.nav button{
+.nav .market{
     width: 120px;
     height: 40px;
     border: 2px solid black;
     border-radius: 6px;
+}
+
+.menu{
+    display: none;
 }
 
 .nav h1{
@@ -61,23 +65,71 @@ header{
     color: #90928e;
 }
 
-.boxes .box{
+/* .row .box{
     width: 260px;
     height: 380px;
     border-radius: 20px;
     border-radius: 6px;
     background-color: red;
-}
+    margin: 40px 0 0 40px;
+} */
 
-.boxes .box .top{
+.row .box {
     background-image: url(https://th.bing.com/th?id=OIP.vfO6l5vvEkb7Mfzgcalb9gAAAA&w=306&h=204&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2);
     background-position: center;
-    width: 100%;
-    height: 50%;
+    background-size: cover;
+    width: 260px;
+    height: 380px;
     border-radius: 6px;
+    overflow: hidden;
+    margin: 20px;
 }
 
-.boxes .box .bottom{
-    width: 100%;
-    height: 50%;;
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-3{
+    width: calc(100% / 12 * 3);
+}
+
+/* Horizontal Tablet */
+@media only screen and (max-width: 1199px) {
+    .col-m-4{
+        width: calc(100% / 12 * 4);
+    }
+
+    .nav ul, .market{
+        display: none;
+    }
+
+    .nav .menu{
+        width: 50px;
+        height: 50px;
+        display: block;
+    }
+
+    .header h2{
+        font-size: 50px;
+    }
+
+    .header p{
+        font-size: 18px;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 991px) {
+    .col-sm-6{
+        width: calc(100% / 12 * 6);
+    }
+}
+
+/* Phone */
+@media only screen and (max-width: 767px) {
+    .col-s-12{
+        width: calc(100% / 12 * 12);
+    }
 }
